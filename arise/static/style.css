@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Entanglement";  
+  src: url("static/fonts/Entanglement-rgpRB.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Chopsic";  
+  src: url("static/fonts/Chopsic-K6Dp.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AloneinSpace";  
+  src: url("static/fonts/AloneInSpaceReguler-qZ2xr.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal;
+}
+
+body {
+  background-repeat: round;
+}
+
+/* navigator */
+.navbar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.navbar-brand {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+/* main part */
+.mm {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-color: #0000009A;
+}
+
+div.showcaseTitle {
+  text-align: center;
+  font-family: Chopsic;
+  color: white;
+  font-size: 36px;
+  padding-top: 20px;
+  margin-bottom: 12px;
+}
+
+.mm .col {
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 286px;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: #212529;
+  text-align: center;
+  display: table;
+}
+
+.footer font {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  font-family: var(--bs-body-font-family);
+  font-size: 12px;
+}

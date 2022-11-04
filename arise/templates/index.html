@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Shizafitness - first anime based training course</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="static/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="/jquery-plugins/jalert/jquery-confirm.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/jquery-plugins/jalert/jquery-confirm.js"></script>
+  </head>
+  <body id="bg" background="static/images/bg.jpg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- навигатор начало-->
+      <div class="container-fluid">
+        <a class="navbar-brand" id="brand" href="#">
+          <img src="static/images/logo.gif" alt="" height="110px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Forum</a>
+          </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a hfer="https://www.youtube.com/watch?v=iik25wqIuFo"class="dropdown-item" href="#">Spacetagram</a></li>
+                <li><a href="https://www.youtube.com/watch?v=iik25wqIuFo"class="dropdown-item" href="#">CosmoTube</a></li>
+                <li><a href="https://www.youtube.com/watch?v=iik25wqIuFo"class="dropdown-item" href="#">Instastars</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a id="aboutus" class="dropdown-item" href="#">About us</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <li><a href="http://127.0.0.1:5000/login" class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <li><a href="http://127.0.0.1:5000/signup" class="nav-link" href="#">Sign up</a>
+            </li>
+              <li class="nav-item">
+              <li><a href="{{ url_for('logout') }}" class="nav-link" href="#">Log out</a>
+            </li>
+        </ul>
+          <form class="d-flex">
+            <input id="target" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav> <!-- навигатор конец -->
+    <div class="mm" id="mm"> <!-- основная часть -->
+      <div class="showcaseTitle">Showcase</div>
+      <div class="container">
+        <div class="row row-cols-auto">
+          <div class="col">
+            <div class="card text-white bg-dark border-secondary" style="width: 18rem;">
+              <img src="static/images/characters/id1/main.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Akaza</h5>
+                <p class="card-text">Demon Slayer</p>
+                <a href="http://127.0.0.1:5000/id1" class="btn btn-primary">Train</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-white bg-dark border-secondary" style="width: 18rem;">
+              <img src="static/images/characters/id2/main.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Garou </h5>
+                <p class="card-text">One Punch Man</p>
+                <a href="http://127.0.0.1:5000/id2" class="btn btn-primary">Train</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-white bg-dark border-secondary" style="width: 18rem;">
+              <img src="static/images/characters/id3/main.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jotaro</h5>
+                <p class="card-text">Jojo's Bizzare Adventure</p>
+                <a href="http://127.0.0.1:5000/id3" class="btn btn-primary">Train</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-white bg-dark border-secondary" style="width: 18rem;">
+              <img src="static/images/characters/id4/main.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Zoro</h5>
+                <p class="card-text">One Piece</p>
+                <a href="http://127.0.0.1:5000/id4" class="btn btn-primary">Train</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-white bg-dark border-secondary" style="width: 18rem;">
+              <img src="static/images/characters/id5/main.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kokushibo</h5>
+                <p class="card-text">Demon Slayer</p>
+                <a href="http://127.0.0.1:5000/id5" class="btn btn-primary">Train</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-white bg-dark border-secondary" style="width: 18rem;">
+              <img src="static/images/characters/id6/main.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ichigo</h5>
+                <p class="card-text">Bleach</p>
+                <a href="http://127.0.0.1:5000/id6" class="btn btn-primary">Train</a>
+              </div>
+            </div>
+          </div>
+                    <div class="col">
+            <div class="card text-white bg-dark border-secondary" style="width: 18rem;">
+              <img src="static/images/characters/id7/main.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Josuke</h5>
+                <p class="card-text">Jojo's Bizzare Adventure</p>
+                <a href="http://127.0.0.1:5000/id7" class="btn btn-primary">Train</a>
+              </div>
+            </div>
+          </div>
+                    <div class="col">
+            <div class="card text-white bg-dark border-secondary" style="width: 18rem;">
+              <img src="static/images/characters/id8/main.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sasuke</h5>
+                <p class="card-text">Naruto</p>
+                <a href="http://127.0.0.1:5000/id8" class="btn btn-primary">Train</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- конец основной части -->
+    <div class="footer"> <!-- подвал начало -->
+      <font>© 2022 Astana IT University, Omar and Madi</font>
+      <video style="position:fixed;" id="video" src="/sounds/button_over.mp3" autoplay>
+    </div> <!-- подвал конец -->
+
+    <script type="text/javascript">
+      // FAQ
+      $("#faq").click(function() {
+        prompt("What is your suggestions to improve our website?")
+        $.alert({
+          title:'Thank You!',
+          animation:'scaley',
+          content:'Thank you for your recommendations, we will consider it and upgrade the quality of the work!',
+          theme: 'rooz-2'
+        })
+      });
+      
+      // About Us
+      $("#aboutus").click(function() {
+        $.alert({
+          title: 'About us!',
+          animation: 'scale',
+          content:'SpaceShop - is online market of sci-fi goods. We have been on the market for over two galactic years and our reputation is impeccable!',
+          backgroundDismiss: false,
+          theme: 'rooz-2'
+        });
+      });
+      $("#target").keypress(function() {
+        $.alert({
+          title: 'Sorry!',
+          animation: 'scale',
+          content:'This function is currenty is not working. Please, refresh your page',
+          backgroundDismiss: false,
+          theme: 'rooz-2'
+        });
+      });
+      $("a").mouseover(function() {
+        video.load();
+        video.muted = false;
+        video.play();
+      });
+    </script>
+  </body>
+</html>
