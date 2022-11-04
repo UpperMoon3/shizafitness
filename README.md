@@ -1,4 +1,5 @@
 ![logo](https://user-images.githubusercontent.com/99864058/200079971-55fa4b88-f91d-48de-bede-85329de5543f.gif)
+
 Shizafitness by Shayakhmetov Madi and Mukatay Omar from CS-2101 for advanced python course.
 Shizafitness is an anime fitness website that was created with flask application to train your body based on anime characters!
 
